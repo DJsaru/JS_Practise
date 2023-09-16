@@ -1,7 +1,7 @@
 const data = [
     {
         "name" : "sarang",
-        "like" : 25
+        "like" : 35
     },
     {
         "name" : "harsh",
@@ -9,48 +9,22 @@ const data = [
     },
     {
         "name" : "vishwa",
-        "like" : 25
+        "like" : 21
     },
     {
         "name" : "rohit",
-        "like" : 25
+        "like" : 23
     }
 ]
 
-const fetch = data.filter( (get) => {
-    return get.name;
-})
+// const val = data.map( (ind) => ind.like * 10) 
+ 
+// const val2 = data.map().map().filter()
 
-const fetch2 = data.filter( (val) => {
-    return val.like > 20
-})
-
-const fetch3 = data.filter ( (name) => {
-    return name.name === "sarang" || name.like > 20
-})
-
-console.log(fetch)
-console.log(fetch2)
-console.log(fetch3)
-
-
-
-
-
-
-
-const Num = [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-const get = Num.filter((val) => {
-    return val <= 5
-})
-
-Num.forEach( (item) => {
-   if(item > 4){
-        // console.log(item)
-   }else {
-    // console.log(` value is ${item}`)
-   }
-} )
-
-// console.log(get)
+const val3 = data
+                // .map( (val) => val.name === "sarang")
+                .map( (val) => val.like)
+                .filter( (val) => {
+                    return val.like > 10 
+                })
+console.log(val3);
