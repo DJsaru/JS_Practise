@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <div>
+      <h1 id="title" class="heading">
+        Welcome to world of web development <span style="display: none;"> hii hello </span>
+        <p> I am DJ</p>
+      </h1>
+      <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <h2> Lorem Natus earum mobis quam amet enim quod inciduntt.</h2>
+      <p>Continuty is the key</p>
+      <input type="password" name="pass" id="">
+      <ul id="list">
+        <li id="One">One</li>
+        <li id="Two">Two</li>
+        <li id="Three">
+            <img id="img" alt="sry"/></li>
+      </ul>
+
+
+    </div>
+  </body>
+  <script>
+    // document.getElementById('button').addEventListener('click', function(e){
+    //     // alert('hey welcome folks')
+    //     console.log(e)
+    // },false)
+    // document.getElementById('button').onclick = function(){
+    //     alert('hey fols')
+    // }
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTraget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keycode
+
+    document.getElementById('list').addEventListener('click', function(e){
+        console.log('list')
+    }, false)
+    
+    document.getElementById('img').addEventListener('click', function(e){
+        console.log('images')
+    }, false)
+    // event Propagation : - it track from inside to outside
+    // bubblegm : - it goes from bottom to top 
+
+    // capturifng mode : - it opposote od the event propagation || bubblegm
+    // chnage the value to ( ' true ')
+
+
+
+
+
+  </script>
+</html>
