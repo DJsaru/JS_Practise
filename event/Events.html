@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <div>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+    </div>
+    <div id="addEle">
+        <button> Click Me </button>
+    </div>
+    <div id="output">
+        <h1> Hello </h1>
+    </div>
+</body>
+
+    <script>
+        document.querySelector('ul').addEventListener('click', function(e){
+            alert('Hello')
+            const rem = e.target
+            rem.remove()
+        })
+
+        const out = document.getElementById('output');
+        function output(){
+            out.innerText += `You clicked \n`
+        }
+        document.getElementById('addEle').addEventListener('click', output
+        )
+    </script>
+</html>
