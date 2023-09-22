@@ -10,10 +10,33 @@
       <h1 id="name">Sarang Jaybhaye</h1>
       <button id="btn">Stop</button>
     </div>
+    <div id="add">
+
+    </div>
   </body>
   <script>
-    setTimeout(function(){
-        document.getElementById('name').innerText = "D.J.SARU."
-    },2000)
+    const add = document.getElementById("add")
+    const set = function () {
+        add.innerText += `HEY BUDDY ` ;
+      document.getElementById("name").innerText = "Welcome Bro";
+      document.getElementById("name").style.backgroundColor = "blue";
+      document.body.style.backgroundColor = 'red';
+    };
+
+    const arr =  ["red", "green", "blue", "yellow", "purple"];
+    let current = 0;
+
+    function bgColor (){
+        document.body.style.backgroundColor = arr[current]
+        current = current + 1
+        document.getElementById('add').innerHTML = "CHANGING BG "
+    }
+    const stop = setInterval(bgColor, 2000);
+
+    document.getElementById('btn').addEventListener('click', function(e){
+        clearTimeout(stop , 500);
+    })
+    // clearTimeout(clear)
+
   </script>
 </html>
