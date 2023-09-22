@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>HELLO FOLKS</h1>
+      <div id="added"></div>
+      <button id="btn-start">Start</button>
+      <button id="btn-stop">Stop</button>
+    </div>
+  </body>
+  <script>
+    const change = document.querySelector("h1");
+    const add = document.getElementById("added");
+
+    function Name() {
+      change.style.backgroundColor = "red";
+      change.innerText += ` hello folks welcome`;
+    }
+    function start() {
+      stop = setInterval(Name, 2000);
+    }
+
+    document
+      .getElementById("btn-start")
+      .addEventListener("click", function (e) {
+        start();
+      });
+
+    document.getElementById("btn-stop").addEventListener("click", function (e) {
+      clearInterval(stop, 1000);
+    });
+  </script>
+</html>
