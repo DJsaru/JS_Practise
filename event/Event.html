@@ -22,11 +22,10 @@
             <img id="img" alt="sry"/></li>
       </ul>
       <a href="https://www.google.com/" id="google" > Google </a>
-
-
     </div>
   </body>
   <script>
+
     // document.getElementById('button').addEventListener('click', function(e){
     //     // alert('hey welcome folks')
     //     console.log(e)
@@ -48,27 +47,25 @@
         console.log('images')
         e.stopPropagation()
     }, false)
+
     // event Propagation : - it track from inside to outside
     // bubblegm : - it goes from bottom to top 
 
-    // capturifng mode : - it opposote od the event propagation || bubblegm
+    // capturifng mode : - it opposote od the event propagation || bubblegm 
     // chnage the value to ( ' true ')
 
-
-    // document.getElementById('google').addEventListener('click', function(e){
+    // document.getElementById('google').addEventListener('click', function(e){ 
     //   e.preventDefault();
     //   console.log('google')
     // })
 
-
     //  id = #img,, class = .class, attribute = li
+
       document.querySelector('li').addEventListener('click', function(e) {
         console.log(e.target)
           const removed = e.target
           removed.remove()
       })
-
-
-
+      
   </script>
 </html>

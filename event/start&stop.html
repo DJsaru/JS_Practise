@@ -16,7 +16,6 @@
   <script>
     const change = document.querySelector("h1");
     const add = document.getElementById("added");
-
     function Name() {
       change.style.backgroundColor = "red";
       change.innerText += ` hello folks welcome`;
@@ -24,13 +23,11 @@
     function start() {
       stop = setInterval(Name, 2000);
     }
-
     document
       .getElementById("btn-start")
       .addEventListener("click", function (e) {
         start();
       });
-
     document.getElementById("btn-stop").addEventListener("click", function (e) {
       clearInterval(stop, 1000);
     });

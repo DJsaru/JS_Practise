@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1 id="insert">Inter the key</h1>
+      </div>
+    </div>
+  </body>
+  <script>
+    const input = document.getElementById("insert");
+    window.addEventListener("keydown", function (e) {
+      input.innerHTML = `<div>
+            <h1> ${e.key} </h1>
+            <h2> ${e.keyCode}
+            </div>`
+    });
+  </script>
+</html>
